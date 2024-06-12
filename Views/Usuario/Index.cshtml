@@ -1,0 +1,96 @@
+﻿@model IEnumerable<Sistema_Desaparecidos.Models.Usuario>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="text-center my-4">Usuários</h1>
+
+<div class="container">
+    <div class="row mb-4">
+        <div class="col text-right">
+            <a asp-action="Create" class="btn btn-success"><i class="fas fa-plus-circle mr-2"></i>Criar um novo</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Nome</th>
+                            <th>Telefone</th>
+                            <th>Email</th>
+                            <th>Senha</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@Html.DisplayFor(modelItem => item.UsuarioNome)</td>
+                                <td>@Html.DisplayFor(modelItem => item.UsuarioTelefone)</td>
+                                <td>@Html.DisplayFor(modelItem => item.UsuarioEmail)</td>
+                                <td>@Html.DisplayFor(modelItem => item.UsuarioSenha)</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <a asp-action="Edit" asp-route-id="@item.UsuarioId" class="btn btn-warning text-white"><i class="fas fa-edit mr-1"></i>Editar</a>
+                                        <a asp-action="Details" asp-route-id="@item.UsuarioId" class="btn btn-info"><i class="fas fa-info-circle mr-1"></i>Detalhes</a>
+                                        <a asp-action="Delete" asp-route-id="@item.UsuarioId" class="btn btn-danger"><i class="fas fa-trash-alt mr-1"></i>Deletar</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer mt-4 py-3 bg-light">
+    <div class="container text-center">
+        <span class="text-muted">Sistema de Desaparecidos © 2024</span>
+    </div>
+</footer>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    .container {
+        margin-top: 30px;
+    }
+
+    .btn-success {
+        background-color: #28a745;
+        border-color: #28a745;
+    }
+
+        .btn-success:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
+        }
+
+    .table th,
+    .table td {
+        vertical-align: middle;
+    }
+
+    .footer {
+        background-color: #ffffff;
+        color: #343a40;
+    }
+
+    .btn-group > .btn {
+        margin-right: 5px;
+    }
+</style>

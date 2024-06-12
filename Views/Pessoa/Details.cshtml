@@ -1,0 +1,61 @@
+﻿@model Sistema_Desaparecidos.Models.Pessoa
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1 class="text-center my-4">Detalhes da Pessoa</h1>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Pessoa</h4>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-4">Nome:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.PessoaNome)</dd>
+                        <dt class="col-sm-4">Roupa:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.PessoaRoupa)</dd>
+                        <dt class="col-sm-4">Cor:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.PessoaCor)</dd>
+                        <dt class="col-sm-4">Sexo:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.PessoaSexo)</dd>
+                        <dt class="col-sm-4">Observação:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.PessoaObservacao)</dd>
+                        <dt class="col-sm-4">Local de Desaparecimento:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.PessoaLocalDesaparecimento)</dd>
+                        <dt class="col-sm-4">Foto:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.PessoaFoto)</dd>
+                        <dt class="col-sm-4">Data de Desaparecimento:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.PessoaDtDesaparecimento)</dd>
+                        <dt class="col-sm-4">Data de Encontro:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.PessoaDtEncontro)</dd>
+                        <dt class="col-sm-4">Status:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.PessoaStatus)</dd>
+                        <dt class="col-sm-4">Usuário:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Usuario.UsuarioNome)</dd>
+                    </dl>
+                </div>
+                <div class="card-footer text-muted">
+                    <a asp-action="Edit" asp-route-id="@Model?.PessoaId" class="btn btn-primary">Editar</a>
+                    <a asp-action="Index" class="btn btn-secondary">Voltar para a Lista</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer mt-4 py-3 bg-light">
+    <div class="container text-center">
+        <span class="text-muted">Sistema de Desaparecidos © 2024</span>
+    </div>
+</footer>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,107 @@
+﻿@model Sistema_Desaparecidos.Models.Pessoa
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 class="text-center my-4">Cadastrar uma Pessoa</h1>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Pessoa</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <div class="form-group">
+                            <label asp-for="PessoaNome" class="control-label"></label>
+                            <input asp-for="PessoaNome" class="form-control" />
+                            <span asp-validation-for="PessoaNome" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="PessoaRoupa" class="control-label"></label>
+                            <input asp-for="PessoaRoupa" class="form-control" />
+                            <span asp-validation-for="PessoaRoupa" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="PessoaCor" class="control-label"></label>
+                            <input asp-for="PessoaCor" class="form-control" />
+                            <span asp-validation-for="PessoaCor" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="PessoaSexo" class="control-label"></label>
+                            <input asp-for="PessoaSexo" class="form-control" />
+                            <span asp-validation-for="PessoaSexo" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="PessoaObservacao" class="control-label"></label>
+                            <input asp-for="PessoaObservacao" class="form-control" />
+                            <span asp-validation-for="PessoaObservacao" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="PessoaLocalDesaparecimento" class="control-label"></label>
+                            <input asp-for="PessoaLocalDesaparecimento" class="form-control" />
+                            <span asp-validation-for="PessoaLocalDesaparecimento" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="PessoaFoto" class="control-label"></label>
+                            <input asp-for="PessoaFoto" class="form-control" />
+                            <span asp-validation-for="PessoaFoto" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="PessoaDtDesaparecimento" class="control-label"></label>
+                            <input asp-for="PessoaDtDesaparecimento" class="form-control" />
+                            <span asp-validation-for="PessoaDtDesaparecimento" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="PessoaDtEncontro" class="control-label"></label>
+                            <input asp-for="PessoaDtEncontro" class="form-control" />
+                            <span asp-validation-for="PessoaDtEncontro" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="PessoaStatus" class="control-label"></label>
+                            <input asp-for="PessoaStatus" class="form-control" />
+                            <span asp-validation-for="PessoaStatus" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="UsuarioId" class="control-label"></label>
+                            <select asp-for="UsuarioId" class="form-control" asp-items="ViewBag.UsuarioId"></select>
+                        </div>
+
+                        <div class="form-group text-center mt-4">
+                            <input type="submit" value="Criar" class="btn btn-primary btn-lg btn-block" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center mt-4">
+    <a asp-action="Index" class="btn btn-secondary">Voltar para a Lista</a>
+</div>
+
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container text-center">
+        <span class="text-muted">Sistema de Desaparecidos © 2024</span>
+    </div>
+</footer>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

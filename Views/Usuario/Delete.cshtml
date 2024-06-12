@@ -1,0 +1,102 @@
+﻿@model Sistema_Desaparecidos.Models.Usuario
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1 class="text-center my-4">Deletar Usuário</h1>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Deletar</h4>
+                </div>
+                <div class="card-body">
+                    <h3 class="mb-4">Tem certeza de que deseja excluir isto?</h3>
+                    <dl class="row">
+                        <dt class="col-sm-4">Nome:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.UsuarioNome)</dd>
+                        <dt class="col-sm-4">Telefone:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.UsuarioTelefone)</dd>
+                        <dt class="col-sm-4">Email:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.UsuarioEmail)</dd>
+                        <dt class="col-sm-4">Senha:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.UsuarioSenha)</dd>
+                    </dl>
+                </div>
+                <div class="card-footer text-muted">
+                    <form asp-action="Delete">
+                        <input type="hidden" asp-for="UsuarioId" />
+                        <input type="submit" value="Deletar" class="btn btn-danger" /> |
+                        <a asp-action="Index" class="btn btn-secondary">Voltar para a Lista</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer mt-4 py-3 bg-light">
+    <div class="container text-center">
+        <span class="text-muted">Sistema de Desaparecidos © 2024</span>
+    </div>
+</footer>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .container {
+        flex: 1;
+    }
+
+    .card-header {
+        background-color: #007bff;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+    .btn-danger {
+        background-color: #dc3545;
+        border-color: #dc3545;
+    }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+            border-color: #bd2130;
+        }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        border-color: #6c757d;
+    }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+        }
+
+    .footer {
+        background-color: #f8f9fa;
+        border-top: 1px solid #e9ecef;
+    }
+</style>
