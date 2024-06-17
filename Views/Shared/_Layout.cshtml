@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,26 +7,47 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Sistema_Desaparecidos.styles.css" asp-append-version="true" />
+    <style>
+        .navbar-custom {
+            background-color: #f8f9fa; /* Cor de fundo personalizada */
+            border-bottom: 1px solid #e3e3e3; /* Borda inferior */
+        }
+
+            .navbar-custom .navbar-brand img {
+                height: 40px; /* Tamanho da imagem do logo */
+            }
+
+            .navbar-custom .nav-link {
+                color: #5a5a5a; /* Cor dos links */
+                font-weight: 500; /* Peso da fonte dos links */
+            }
+
+                .navbar-custom .nav-link:hover {
+                    color: #000; /* Cor dos links ao passar o mouse */
+                }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-custom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Sistema_Desaparecidos</a>
+                <a class="navbar-brand" href="/">
+                    <img src="~/img/Logo-2.png" alt="Sistema_Desaparecidos Logo">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Pessoa" asp-action="Index">Pessoas</a>
+                            <a class="nav-link" href="/Pessoa">Pessoas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Usuario" asp-action="Index">Usuários</a>
+                            <a class="nav-link" href="/Usuario">Usuários</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Observacoe" asp-action="Index">Observações</a>
+                            <a class="nav-link" href="/Observacoe">Observações</a>
                         </li>
                     </ul>
                 </div>
@@ -41,7 +62,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - Sistema_Desaparecidos - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2024 - Sistema_Desaparecidos - <a href="/Home/Privacy">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

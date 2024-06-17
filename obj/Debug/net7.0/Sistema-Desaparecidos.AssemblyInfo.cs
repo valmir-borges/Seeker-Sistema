@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sistema-Desaparecidos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa58ee7f401f88eedea364d15b78524bb8bef2ee")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sistema-Desaparecidos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sistema-Desaparecidos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -4,51 +4,112 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Editar</h1>
+<h1 class="text-center my-4">Editar Observação</h1>
 
-<h4>Observações</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="ObservacoesId" />
-            <div class="form-group">
-                <label asp-for="ObservacoesDescricao" class="control-label"></label>
-                <input asp-for="ObservacoesDescricao" class="form-control" />
-                <span asp-validation-for="ObservacoesDescricao" class="text-danger"></span>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Observação</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Edit">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <input type="hidden" asp-for="ObservacoesId" />
+
+                        <div class="form-group">
+                            <label asp-for="ObservacoesDescricao" class="control-label"></label>
+                            <input asp-for="ObservacoesDescricao" class="form-control" />
+                            <span asp-validation-for="ObservacoesDescricao" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="ObservacoesLocal" class="control-label"></label>
+                            <input asp-for="ObservacoesLocal" class="form-control" />
+                            <span asp-validation-for="ObservacoesLocal" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="ObservacoesData" class="control-label"></label>
+                            <input asp-for="ObservacoesData" class="form-control" />
+                            <span asp-validation-for="ObservacoesData" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="PessoaId" class="control-label"></label>
+                            <select asp-for="PessoaId" class="form-control" asp-items="ViewBag.PessoaId"></select>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="UsuarioId" class="control-label"></label>
+                            <select asp-for="UsuarioId" class="form-control" asp-items="ViewBag.UsuarioId"></select>
+                        </div>
+
+                        <div class="form-group text-center mt-4">
+                            <input type="submit" value="Salvar" class="btn btn-primary btn-lg btn-block" />
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="ObservacoesLocal" class="control-label"></label>
-                <input asp-for="ObservacoesLocal" class="form-control" />
-                <span asp-validation-for="ObservacoesLocal" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ObservacoesData" class="control-label"></label>
-                <input asp-for="ObservacoesData" class="form-control" />
-                <span asp-validation-for="ObservacoesData" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PessoaId" class="control-label"></label>
-                <select asp-for="PessoaId" class="form-control" asp-items="ViewBag.PessoaId"></select>
-                <span asp-validation-for="PessoaId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="UsuarioId" class="control-label"></label>
-                <select asp-for="UsuarioId" class="form-control" asp-items="ViewBag.UsuarioId"></select>
-                <span asp-validation-for="UsuarioId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Salvar" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Voltar para a Lista</a>
+<div class="text-center mt-4">
+    <a asp-action="Index" class="btn btn-secondary">Voltar para a Lista</a>
 </div>
 
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container text-center">
+        <span class="text-muted">Sistema de Desaparecidos © 2024</span>
+    </div>
+</footer>
+
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
+
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .container {
+        flex: 1;
+    }
+
+    .card-header {
+        background-color: #007bff;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        border-color: #6c757d;
+    }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+        }
+
+    .footer {
+        background-color: #f8f9fa;
+        border-top: 1px solid #e9ecef;
+    }
+</style>

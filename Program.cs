@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<Contexto>
-    (options => options.UseSqlServer("Data Source=SP-1491029\\SQLSENAI;" +
+    (options => options.UseSqlServer("Data Source=DESKTOP-3E1RVPP\\SQLEXPRESS;" +
     "Initial Catalog = ErpApiPederneiras;" +
     "Integrated Security = True;TrustServerCertificate = True"));
 
