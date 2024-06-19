@@ -9,99 +9,97 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Sistema_Desaparecidos
 build_property.RootNamespace = Sistema_Desaparecidos
-build_property.ProjectDir = C:\Users\Valmir\Desktop\Seeker-Sistema\Seeker-Sistema\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = C:\Users\Aluno\Desktop\Sistema-Seeker\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Valmir\Desktop\Seeker-Sistema\Seeker-Sistema
+build_property.MSBuildProjectDirectory = C:\Users\Aluno\Desktop\Sistema-Seeker
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Valmir/Desktop/Seeker-Sistema/Seeker-Sistema/Views/Home/Index.cshtml]
+[C:/Users/Aluno/Desktop/Sistema-Seeker/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Valmir/Desktop/Seeker-Sistema/Seeker-Sistema/Views/Home/Privacy.cshtml]
+[C:/Users/Aluno/Desktop/Sistema-Seeker/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Valmir/Desktop/Seeker-Sistema/Seeker-Sistema/Views/Observacoe/Create.cshtml]
+[C:/Users/Aluno/Desktop/Sistema-Seeker/Views/Observacoe/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2JzZXJ2YWNvZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Valmir/Desktop/Seeker-Sistema/Seeker-Sistema/Views/Observacoe/Delete.cshtml]
+[C:/Users/Aluno/Desktop/Sistema-Seeker/Views/Observacoe/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2JzZXJ2YWNvZVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Valmir/Desktop/Seeker-Sistema/Seeker-Sistema/Views/Observacoe/Details.cshtml]
+[C:/Users/Aluno/Desktop/Sistema-Seeker/Views/Observacoe/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2JzZXJ2YWNvZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Valmir/Desktop/Seeker-Sistema/Seeker-Sistema/Views/Observacoe/Edit.cshtml]
+[C:/Users/Aluno/Desktop/Sistema-Seeker/Views/Observacoe/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2JzZXJ2YWNvZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Valmir/Desktop/Seeker-Sistema/Seeker-Sistema/Views/Observacoe/Index.cshtml]
+[C:/Users/Aluno/Desktop/Sistema-Seeker/Views/Observacoe/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2JzZXJ2YWNvZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Valmir/Desktop/Seeker-Sistema/Seeker-Sistema/Views/Pessoa/Create.cshtml]
+[C:/Users/Aluno/Desktop/Sistema-Seeker/Views/Pessoa/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Valmir/Desktop/Seeker-Sistema/Seeker-Sistema/Views/Pessoa/Delete.cshtml]
+[C:/Users/Aluno/Desktop/Sistema-Seeker/Views/Pessoa/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Valmir/Desktop/Seeker-Sistema/Seeker-Sistema/Views/Pessoa/Details.cshtml]
+[C:/Users/Aluno/Desktop/Sistema-Seeker/Views/Pessoa/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Valmir/Desktop/Seeker-Sistema/Seeker-Sistema/Views/Pessoa/Edit.cshtml]
+[C:/Users/Aluno/Desktop/Sistema-Seeker/Views/Pessoa/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Valmir/Desktop/Seeker-Sistema/Seeker-Sistema/Views/Pessoa/Index.cshtml]
+[C:/Users/Aluno/Desktop/Sistema-Seeker/Views/Pessoa/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Valmir/Desktop/Seeker-Sistema/Seeker-Sistema/Views/Shared/Error.cshtml]
+[C:/Users/Aluno/Desktop/Sistema-Seeker/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Valmir/Desktop/Seeker-Sistema/Seeker-Sistema/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Aluno/Desktop/Sistema-Seeker/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Valmir/Desktop/Seeker-Sistema/Seeker-Sistema/Views/Usuario/Create.cshtml]
+[C:/Users/Aluno/Desktop/Sistema-Seeker/Views/Usuario/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Valmir/Desktop/Seeker-Sistema/Seeker-Sistema/Views/Usuario/Delete.cshtml]
+[C:/Users/Aluno/Desktop/Sistema-Seeker/Views/Usuario/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Valmir/Desktop/Seeker-Sistema/Seeker-Sistema/Views/Usuario/Details.cshtml]
+[C:/Users/Aluno/Desktop/Sistema-Seeker/Views/Usuario/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Valmir/Desktop/Seeker-Sistema/Seeker-Sistema/Views/Usuario/Edit.cshtml]
+[C:/Users/Aluno/Desktop/Sistema-Seeker/Views/Usuario/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Valmir/Desktop/Seeker-Sistema/Seeker-Sistema/Views/Usuario/Index.cshtml]
+[C:/Users/Aluno/Desktop/Sistema-Seeker/Views/Usuario/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Valmir/Desktop/Seeker-Sistema/Seeker-Sistema/Views/_ViewImports.cshtml]
+[C:/Users/Aluno/Desktop/Sistema-Seeker/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Valmir/Desktop/Seeker-Sistema/Seeker-Sistema/Views/_ViewStart.cshtml]
+[C:/Users/Aluno/Desktop/Sistema-Seeker/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Valmir/Desktop/Seeker-Sistema/Seeker-Sistema/Views/Shared/_Layout.cshtml]
+[C:/Users/Aluno/Desktop/Sistema-Seeker/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-to8di367u8
